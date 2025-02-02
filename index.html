@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Consumo em kWh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Consumo em kWh</h1>
+        <form id="calculo-form">
+            <label for="empresa">Escolha a empresa fornecedora:</label>
+            <select id="empresa" required>
+                <option value="edp">EDP</option>
+                <option value="endesa">Endesa</option>
+                <option value="galp">Galp</option>
+                <option value="repsol">Repsol</option>
+                <option value="goldenergy">Goldenergy</option>
+                <option value="plenitude">Plenitude</option>
+            </select>
+
+            <label for="faturacao">Digite sua faturação mensal (em R$):</label>
+            <input type="number" id="faturacao" required>
+
+            <label for="tarifa">Escolha o tipo de tarifa:</label>
+            <select id="tarifa" required>
+                <option value="simples">Simples</option>
+                <option value="bi-horaria">Bi-Horária</option>
+            </select>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="resultado" class="resultado">
+            <p id="resultado-kwh">Resultado:</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
