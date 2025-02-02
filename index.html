@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Preço de Energia</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Arquivo de estilo -->
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>Simulador de Preço de Energia</h1>
+            <p>Descubra qual a melhor empresa para o seu consumo de energia</p>
+        </div>
+        
+        <div class="simulador">
+            <label for="consumo">Consumo de Energia (kWh):</label>
+            <input type="number" id="consumo" placeholder="Digite o consumo em kWh">
+        
+            <button id="calcularBtn">Calcular Preço</button>
+            
+            <div id="resultado"></div> <!-- Resultado vai aqui -->
+        </div>
+    </div>
+
+    <!-- Créditos abaixo da caixa principal -->
+    <div id="creditos">
+        Rui Cunha - Endesa Supervisor
+    </div>
+
+    <script src="script.js"></script> <!-- Arquivo JavaScript -->
+</body>
+</html>
